@@ -1,0 +1,37 @@
+{{ define "Success" }}
+
+<html>
+  <head>
+    <title>Success</title>
+
+    <meta charset="UTF-8" />
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,400i,700,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="../asset/css/style.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="../asset/css/responsive.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+  
+  </head>
+
+    <body class="success-body">
+      <div class="card">
+        <div class="flex invite-user">
+          <p>Welcome {{.FirstName}} {{.LastName}} !</p>
+          <a href="/" class="logout"><span class="glyphicon glyphicon-log-out"></span>Logout</a>
+        </div>
+       
+      <div style="border-radius:200px; height:200px; width:200px; background: #F8FAF5; margin:0 auto;">
+        <i class="checkmark">✓</i>
+      </div>
+        <h1>Successfully logged in </h1> 
+       <p>we'll be in touch shortly!</p>
+      </div>
+    </body>
+</html>
+
+{{ end }}

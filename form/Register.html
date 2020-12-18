@@ -1,0 +1,114 @@
+{{ define "Register" }}
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <title>Golang Register</title>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link rel="stylesheet" href="../asset/css/style.css" crossorigin="anonymous">
+  <link rel="stylesheet" href="../asset/css/responsive.css" crossorigin="anonymous">
+
+
+</head>
+
+<body class="login">
+
+
+  <div class="container">
+
+    <div class="login-wrapo flex">
+
+      <div class="login-box">
+
+        <h2>Register</h2>
+
+        <!-- forms.html -->
+    
+        <form id="registerForm" action="/registeruser" method="POST">
+
+          <input type="text" name="firstname" required placeholder="First Name">
+
+          <input type="text" name="lastname" placeholder="Last Name">
+
+          <input type="text" name="mobilenumber" required placeholder="Mobile number">
+
+          <input type="email" name="emailId" required placeholder="Email ID">
+
+          <input type="password" name="password" id="password" required placeholder="Password">
+
+          <input type="password" name="confirmpassword" required placeholder="Confirm Password">
+
+          <button type="submit cursor" class="ripple cursor"> Register </button>
+
+        </form>
+
+        <p class="flex"> <a href="/"> Already have an account? Sign In </a> </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.js"></script>
+
+<script>
+  $('#registerForm').validate({ // initialize the plugin
+    rules: {
+      "firstname": {
+        required: true,
+      },
+      "mobilenumber": {
+        required: true,
+        number: true,
+        minlength: 10,
+        maxlength: 10
+      },
+      "emailId": {
+        required: true,
+        email: true
+      },
+      "password": {
+        required: true,
+        minlength: 8
+
+      },
+      "confirmpassword": {
+        required: true,
+        equalTo: "#password"
+
+      }
+    },
+    messages: {
+      "firstname": {
+        required: "Please, enter a name"
+      },
+      "mobilenumber": {
+        required: "Please, enter a mobile nmber",
+        minlength: "Mobile number should be in 10 digits",
+        maxlength: "Mobile number should be in 10 digits",
+      },
+      "emailId": {
+        required: "Please, enter an email",
+        email: "Email is invalid"
+      },
+      "password": {
+        required: "Please,enter a password"
+      },
+      "confirmpassword": {
+        required: "Please,enter a confirm password"
+      }
+    },
+    submitHandler: function (form) {
+      form.submit();
+    }
+  });
+</script>
+
+{{ end }}
