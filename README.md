@@ -19,7 +19,7 @@ Simply install the package to your $GOPATH with the go tool from shell:
 
 A MySQL-Driver for Go's database/sql package
 
- golang.org/x/crypto/bcrypt
+***golang.org/x/crypto/bcrypt***
 
 Package bcrypt implements Provos and Mazières's bcrypt adaptive hashing algorithm
 
@@ -30,5 +30,12 @@ A Go (golang) port of the Ruby dotenv (which loads env vars from a .env file)
 
 ***github.com/joho/godotenv***
 
+
+Sample Screenshots
+
+
+**LOGIN**
+
+![login](https://user-images.githubusercontent.com/57518446/103137762-e6e8a100-46f1-11eb-85cb-da1d7659ae19.png)
 
 
