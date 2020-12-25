@@ -15,23 +15,23 @@ This is a code written in the Golang, which requires User to prove his identity 
 
 Simply install the package to your $GOPATH with the go tool from shell:
 
-[github.com/go-sql-driver/mysql][rf]
+<span style="color:blue;">github.com/go-sql-driver/mysql</span>
 
 
 A MySQL-Driver for Go's database/sql package
 
-[golang.org/x/crypto/bcrypt][rf]
+
+<span style="color:blue;">golang.org/x/crypto/bcrypt</span>
 
  
-
 Package bcrypt implements Provos and Mazières's bcrypt adaptive hashing algorithm
 
 
 **LIBRARIES**
 
 
-[github.com/joho/godotenv][rf]
- 
+<span style="color:blue;">github.com/joho/godotenv</span>
+
 
 A Go (golang) port of the Ruby dotenv (which loads env vars from a .env file)
 
