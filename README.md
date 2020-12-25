@@ -11,11 +11,11 @@ Authentication is used by a server or a client when the server or the client nee
 
 This is a code written in the Golang, which requires User to prove his identity to the server or client. Using this code in Go, you can develop the user authentication feature with user name and password.
 
-**PACKAGES **
+**PACKAGES**
 
 Simply install the package to your $GOPATH with the go tool from shell:
 
- *** github.com/go-sql-driver/mysql ***	
+***github.com/go-sql-driver/mysql***	
 
 A MySQL-Driver for Go's database/sql package
 
@@ -24,9 +24,11 @@ A MySQL-Driver for Go's database/sql package
 Package bcrypt implements Provos and Mazières's bcrypt adaptive hashing algorithm
 
 
-**LIBRARIES **
-
-*** github.com/joho/godotenv ***
+**LIBRARIES**
 
 A Go (golang) port of the Ruby dotenv (which loads env vars from a .env file)
+
+***github.com/joho/godotenv***
+
+
 
